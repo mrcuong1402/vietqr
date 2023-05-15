@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>VietQR Payment Kit</title>
+
+	<script src="jquery.min.js"></script>
+	<script src="qrcode.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<img src="img/vietqr api - payment kit.png" alt="">
+		</header>
+		<main>
+			<div class="qr-container">
+				<div id="qrcode"></div>
+			</div>
+			<br>			
+			<div id="wait">Chờ giao dịch</div>
+			<div id="countNumber" class="countNumber"></div>
+			<br>
+			<div id="successful" class="successful"></div>
+			<div id="fail" class="fail"></div>
+		</main>
+
+		<script>
+			var qrcode = new QRCode("qrcode",
+				"00020101021138560010A0000007270126000697042201126868140219970208QRIBFTTA5303704540410005802VN62360832VQRe00dfa0463.cuong chuyen khoan63041338");
+
+			const duration = 1000,//milliseconds
+				countDownElement = document.getElementById('countNumber')
+
+			let count = 59;
+
+			const timer = setInterval(() => {
+				document.getElementById('countNumber').innerHTML = count;
+				count--;
+
+				if (count < 0) {
+					clearInterval(timer);
+					console.log("Countdown complete!");
+				}
+			}, duration);//your element to display the countDown
+
+		</script>
+	</div>
+</body>
+
+</html>
