@@ -1,0 +1,14 @@
+﻿{
+	"bank": [
+		{
+			"bankCode": "MB",
+			"bankAccount": "686814021997",
+			"userBankName": "NGUYEN NGOC CUONG"			
+		},
+		{
+			"bankCode": "VCB",
+			"bankAccount": "0101001196083",
+			"userBankName": "NGUYEN NGOC CUONG"			
+		}
+	]
+}

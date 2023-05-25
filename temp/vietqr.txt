@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,14 +17,14 @@
 			<img src="img/vietqr api - payment kit.png" alt="">
 		</header>
 		<main>
-			<div class="qr-container disabled">
-				<div id="qrcode"></div>
+			<div id="qrcode" class="qr-container disabled">
 			</div>
 			<div class="bank-account">
 				<div>STK: {bankAccount}</div>
 				<div>Chủ TK: {userBankName}</div>
 				<div>Ngân hàng: {bankName}</div>
-				<hr>
+				<hr style="width: 300px;">
+				<div style="color: rgb(12, 42, 105); font-size: 20px;">Số tiền: {amount} VND</div>
 				<div style="color: crimson;">Nội dung chuyển khoản</div>				
 				<div style="font-style: italic; font-weight: normal;">{content}</div>
 			</div>
@@ -36,7 +36,7 @@
 		</main>
 
 		<script>
-			var qrcode = new QRCode("qrcode", "{qrcode}");
+			var qrcode = new QRCode("qrcode", "{qrCode}");
 
 			const duration = 1000,//milliseconds
 				countDownElement = document.getElementById('countNumber')

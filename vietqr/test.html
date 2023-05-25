@@ -17,16 +17,16 @@
 			<img src="img/vietqr api - payment kit.png" alt="">
 		</header>
 		<main>
-			<div class="qr-container disabled">
-				<div id="qrcode"></div>
+			<div id="qrcode" class="qr-container disabled">
 			</div>
 			<div class="bank-account">
 				<div>STK: 686814021997</div>
 				<div>Chủ TK: NGUYEN NGOC CUONG</div>
 				<div>Ngân hàng: Ngân hàng TMCP Quân đội</div>
-				<hr>
+				<hr style="width: 300px;">
+				<div style="color: rgb(12, 42, 105); font-size: 20px;">Số tiền: 10,000 VND</div>
 				<div style="color: crimson;">Nội dung chuyển khoản</div>				
-				<div style="font-style: italic; font-weight: normal;">dem qua em tuyet lam</div>
+				<div style="font-style: italic; font-weight: normal;">test: 05/25/2023 13:55:33</div>
 			</div>
 			<br>			
 			<div id="countNumber" class="countNumber"></div>
@@ -36,7 +36,7 @@
 		</main>
 
 		<script>
-			var qrcode = new QRCode("qrcode", "00020101021138560010A0000007270126000697042201126868140219970208QRIBFTTA5303704540410005802VN62360832VQRceb5b28701.cuong chuyen khoan630425D8");
+			var qrcode = new QRCode("qrcode", "00020101021138560010A0000007270126000697042201126868140219970208QRIBFTTA53037045405100005802VN62430839VQR595e56492a.test: 05/25/2023 13:55:336304C3A4");
 
 			const duration = 1000,//milliseconds
 				countDownElement = document.getElementById('countNumber')

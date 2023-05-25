@@ -1,0 +1,8 @@
+﻿{
+	"vietqr_index_template": "temp/vietqr.txt",
+	"vietqr_index": "D:\\vietqr\\vietqr\\test.html",
+	"vqr_token_generate": "http://112.78.1.220:8084/vqr/api/token_generate",
+	"vqr_generate_customer": "http://112.78.1.220:8084/vqr/api/qr/generate-customer",
+	"vqr_username": "customer-bl-user05",
+	"vqr_password": "Y3VzdG9tZXItYmwtdXNlcjA1"
+}

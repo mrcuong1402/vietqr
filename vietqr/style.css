@@ -13,9 +13,14 @@ div#qrcode {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header > img {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     width: 150px;
+}
+
+main {
+    align-items: center;     
+    max-width: 500px;   
+    min-width: 500px;
 }
 
 .bank-account {
@@ -38,12 +43,16 @@ header > img {
     margin-top: -10px
 }
 
-.qr-container{
+
+div.qr-container{
+    margin: 0 auto;
+    display: block;
     align-items: center;
     border-style: solid;
     border-color: rgb(12, 42, 105);
-    border-radius: 15px;    
-    padding: 15px;
+    border-radius: 15px;   
+    height: 290px;
+    max-width: 290px;
 }
 
 .disabled {
